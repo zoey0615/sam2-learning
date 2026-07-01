@@ -1,0 +1,38 @@
+# --- Python 相關 ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.coverage
+.env
+
+# --- Node.js / 前端相關 ---
+# 針對 demo/frontend 資料夾
+node_modules/
+dist/
+.vite/
+.eslintcache
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- IDE 與 系統雜項 ---
+# VS Code
+.vscode/
+# PyCharm / JetBrains
+.idea/
+# macOS
+.DS_Store
+# Windows
+Thumbs.db
+
+# --- 專案特定 (很重要！) ---
+# 忽略所有 Checkpoint 模型檔 (這些檔案通常非常大，不適合放入 Git)
+checkpoints/*.pt
+
+# Jupyter Notebook 產生的暫存檔
+.ipynb_checkpoints/
